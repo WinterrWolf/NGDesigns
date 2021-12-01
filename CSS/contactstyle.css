@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Neue", cursive;
+}
+.header {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+body {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(79, 95, 160, 0.7)),
+    url(../images/logo11.jpg);
+  min-height: 100vh;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.header nav {
+  display: flex;
+  padding: 2%;
+  padding-left: 7%;
+  padding-right: 7%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .links ul {
+  padding-right: 40px;
+}
+.header nav .logo img {
+  width: 150px;
+  border-radius: 125px;
+  border: 1px solid #000;
+}
+.header .links {
+  flex: 1;
+  text-align: right;
+  justify-content: space-evenly;
+}
+.header .links ul li {
+  list-style: none;
+  margin-right: 20px;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.header .links ul li a {
+  color: #000;
+  text-decoration: none;
+}
+.header .links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.header .links ul li:hover::after {
+  width: 100%;
+}
+.header .contact {
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header .contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+.header .contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.contact .content p {
+  font-size: 20px;
+  font-weight: 300;
+}
+.contact .container .contactInfo p {
+  font-weight: 400;
+  font-size: 20px;
+}
+.header .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.container .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #000;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: #0ff;
+}
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: 0;
+  resize: none;
+}
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #f395b4;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #00bcd4;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 1px;
+  }
+  .header .contact {
+    padding: 30px;
+  }
+  .header .container {
+    flex-direction: column;
+    text-align: left;
+  }
+  .header .container .contactInfo {
+    margin-bottom: 40px;
+  }
+  .contactForm,
+  .container .contactInfo {
+    width: 100%;
+  }
+}

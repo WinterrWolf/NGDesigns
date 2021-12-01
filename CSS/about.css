@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Neue", cursive;
+}
+body {
+  min-height: 100vh;
+  margin: auto;
+  background-image: linear-gradient(
+    rgba(4, 9, 30, 0.7),
+    rgba(79, 95, 160, 0.7)
+  );
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.header {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+nav {
+  display: flex;
+  padding: 2%;
+  padding-left: 7%;
+  padding-right: 7%;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.links ul {
+  padding-right: 40px;
+}
+nav .logo img {
+  width: 150px;
+  border-radius: 125px;
+  border: 1px solid #000;
+}
+.links {
+  flex: 1;
+  text-align: right;
+  justify-content: space-evenly;
+}
+.links ul li {
+  list-style: none;
+  margin-right: 20px;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.links ul li a {
+  color: #000;
+  text-decoration: none;
+}
+.links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.links ul li:hover::after {
+  width: 100%;
+}
+.aboutme {
+  margin-right: 13%;
+  margin-left: 13%;
+}
+.row {
+  display: inline-flex;
+  text-align: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.row .col-md-5 {
+  justify-content: center;
+  align-items: center;
+}
+.row .col-md-5 img {
+  width: 100%;
+  border: 1px solid #000;
+}
+.row .col-md-5 .text .title {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  text-align: left;
+  font-size: 65px;
+}
+.row .col-md-5 .text p {
+  margin-top: 10px;
+  text-align: left;
+}
