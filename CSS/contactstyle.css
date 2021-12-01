@@ -9,7 +9,7 @@
 }
 body {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(79, 95, 160, 0.7)),
-    url(../images/logo11.jpg);
+    url(../Images/logo11.jpg);
   min-height: 100vh;
   margin: auto;
   background-position: center;
